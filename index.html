@@ -9,16 +9,40 @@
 </head>
 
 <body>
-    <h1>Hello, html</h1>
-    <h2>This is h2</h2>
-    <p>Here could be <code>h3 h4 h5 h6</code> elements, <em>but</em> it`s <strong>too looong)</strong></p>
-    <img src="img/img.png" alt="this is my photo">
-    <figure><img src="img/belgbeer.jpg" alt="Belium ale">
-        <figcaption>
-            And this is belgium beer photo
-        </figcaption>
-    </figure>
-    <span>This is a<a href="https://jafar36.github.io/714-html/">link</a>to my Github repository</span>
+    <main>
+        <section><!--This section shows h1 to h6-->
+            <h1>Hello, html</h1>
+            <h2>This is h2</h2>          
+            <p>Here could be <code>h3 h4 h5 h6</code> elements, <em>but</em> it`s <strong>too looong)</strong></p>
+        </section>
+        <hr>  <!--The same line will separate sections-->
+        <section> <!--This section shows images and figures/ links & beer-->   
+            <img src="img/img.png" alt="this is my photo">
+            <figure>
+                <img src="img/belgbeer.jpg" alt="Belium ale">
+                <figcaption>
+                    And this is belgium beer photo
+                </figcaption>
+            </figure>
+            <span>This is a <a href="https://jafar36.github.io/714-html/" target="_blank">link</a> to my Github repository</span>
+        </section>
+        <hr>  
+        <section><!--This section shows form-->
+            <form action="someurl.com">
+                <input type="text" placeholder="some text" required>
+                <fieldset>
+                    <legend>Some stupid question: yes/no?</legend>
+                    <label><input type="radio" name="yes-no"> yes </label>
+                    <label><input type="radio" name="yes-no"> no</label><br>
+                </fieldset>
+                <input type="checkbox"> Mark me!!!
+                <button type="submit">SEND</button>
+            </form>
+        </section>    
+    </main>
+    <footer>
+        <p>All rights reserved/ Privacy policy & blah blah blah</p>   
+    </footer>
 </body>
 
 </html>
